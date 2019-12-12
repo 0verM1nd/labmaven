@@ -26,9 +26,15 @@
         <version>2.6</version>
         <extensions>false</extensions>
         <inherited>true</inherited>
-        <configuration>
-          <classifier>test</classifier>
-        </configuration>
+       <configuration>
+        <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <classpathPrefix>lib/</classpathPrefix>
+            <mainClass>com.mypackage.MyClass</mainClass>
+          </manifest>
+        </archive>
+      </configuration>
         </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
