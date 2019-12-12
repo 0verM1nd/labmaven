@@ -1,2 +1,0 @@
-# labmaven
-Hello word
