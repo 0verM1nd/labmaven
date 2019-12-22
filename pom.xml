@@ -40,7 +40,7 @@
          
   <distributionManagement>
       <snapshotRepository>
-        <id>nexus</id>
+        <id>nexus1</id>
         <url>http://nexus/repository/maven-snapshots/</url>
       </snapshotRepository>
 </distributionManagement>
