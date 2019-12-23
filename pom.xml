@@ -42,7 +42,7 @@
         <extensions>true</extensions>
         <configuration>
             <serverId>nexus</serverId>
-            <nexusUrl>192.168.56.101:8081</nexusUrl>
+            <nexusUrl>http://192.168.56.101:8081</nexusUrl>
         </configuration>
       </plugin>
 
@@ -52,7 +52,7 @@
 <distributionManagement>
       <snapshotRepository>
         <id>nexus</id>
-        <url>192.168.56.101:8081/repository/maven-snapshots/</url>
+        <url>http://192.168.56.101:8081/repository/maven-snapshots/</url>
       </snapshotRepository>
 </distributionManagement>
          
