@@ -43,19 +43,18 @@
         <extensions>true</extensions>
         <configuration>
             <serverId>nexus</serverId>
-            <nexusUrl>http://127.0.0.1:8081/</nexusUrl>
+            <nexusUrl>http://nexus/</nexusUrl>
         </configuration>
       </plugin>
     </plugins>
   </build>
          
-  <distributionManagement>
+<distributionManagement>
       <snapshotRepository>
         <id>nexus</id>
         <url>http://nexus/repository/maven-snapshots/</url>
       </snapshotRepository>
-</distributionManagement>
-         
+</distributionManagement>    
   <dependencies>
         <dependency>
             <groupId>commons-collections</groupId>
