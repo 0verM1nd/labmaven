@@ -35,15 +35,27 @@
         </archive>
       </configuration>
     </plugin>
+    <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.3</version>
+        <extensions>true</extensions>
+        <configuration>
+            <serverId>nexus</serverId>
+            <nexusUrl>http://nexus/</nexusUrl>
+        </configuration>
+      </plugin>
+
     </plugins>
   </build>
          
 <distributionManagement>
       <snapshotRepository>
-        <id>nexus1</id>
+        <id>nexus</id>
         <url>http://nexus/repository/maven-snapshots/</url>
       </snapshotRepository>
-</distributionManagement>    
+</distributionManagement>
+         
   <dependencies>
         <dependency>
             <groupId>commons-collections</groupId>
